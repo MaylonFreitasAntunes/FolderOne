@@ -8,9 +8,6 @@ class SimuladordeDado:
         self.valor_max = 6
         self.mensagem = 'Você gostaria de gerar um novo valor para o dado? '
 
-    def GerarValorDoDado(self):
-        print(random.randint(self.valor_min,self.valor_max))    
-   
     def iniciar(self):
         resposta = input(self.mensagem)
         try:
@@ -23,6 +20,11 @@ class SimuladordeDado:
         except:
             print('Ocorreu um erro')
 
+   
+    
+    def GerarValorDoDado(self):
+        print(random.randint(self.valor_min,self.valor_max))    
+   
          
 
 simulador = SimuladordeDado()
